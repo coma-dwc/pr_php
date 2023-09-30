@@ -261,6 +261,65 @@ echo $scores['国語'];
 
   ?>
 
+  <?php
+
+    $str = 'progate';
+
+    // strlenを用いて$strの長さをechoする
+    echo strlen($str);
+
+    echo '<br>';
+
+    $array = array('HTML', 'CSS', 'PHP');
+
+    // countを用いて$arrayの要素数をechoする
+    echo count($array);
+
+    echo '<br>';
+
+    // randを用いて10から15までのランダムな数字をechoする
+    echo rand(10, 15);
+
+  ?>
+
+  <?php
+
+    // 関数helloを定義する
+    function hello() {
+      echo 'Hello,world!';
+    }
+
+    // 関数helloを呼び出す
+    hello();
+
+    echo '<br>';
+    // 関数printRectangleAreaを定義する
+    function printRectangleArea($height, $width) {
+      echo $height * $width;
+    }
+
+    // 引数を(5, 10)としてprintRectangleAreaを呼び出す
+    printRectangleArea(5, 10);
+
+
+
+  ?>
+
+  <?php
+
+    // 関数getCircleAreaを定義する
+    function getCircleArea($radius) {
+      return $radius * $radius * 3;
+    }
+
+    // 関数getCircleAreaを呼び出して、戻り値を変数$circleAreaに代入する
+    $circleArea = getCircleArea(5);
+
+    // $circleAreaをechoする
+    echo $circleArea
+
+  ?>
+
 
 </body>
 </html>
